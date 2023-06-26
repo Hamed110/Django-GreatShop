@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     'category',
     'accounts',
     'store',
+    'carts',
 ]
 
 MIDDLEWARE = [
@@ -74,6 +75,7 @@ TEMPLATES = [
 
                 # Local context processors
                 'category.context_processors.category_menu',
+                'carts.context_processors.cart_quantity',
             ],
         },
     },
