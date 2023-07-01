@@ -54,7 +54,13 @@ $(document).ready(function() {
 
 
 
+    // // Time out for alerts
+    // setTimeout(function(){
+    //     $('.alert').fadeOut('slow')
+    // }, 4000)
+
     
 }); 
 // jquery end
+
 

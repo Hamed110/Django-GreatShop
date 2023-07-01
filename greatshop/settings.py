@@ -148,3 +148,23 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 # Custom user model
 
 AUTH_USER_MODEL = 'accounts.Account'
+
+# Custom tags for messages levels
+
+from django.contrib.messages import constants as messages
+
+MESSAGE_TAGS = {
+    messages.ERROR: "danger",
+}
+
+# SMTP configuration
+
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_HOST_USER = 'for.my.smtp110@gmail.com'
+# this should be App password and not Gmail password
+# to achieve an App password, first should active 2-step verivication in the security section
+EMAIL_HOST_PASSWORD = 'bitesxsinaokdoyu'
+EMAIL_USE_TLS = True
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+DEFAULT_FROM_EMAIL = EMAIL_HOST_USER
